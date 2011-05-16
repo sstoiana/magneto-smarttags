@@ -1,0 +1,3 @@
+code/SmartTags app/code/community/Magneto/SmartTags
+design/layout/smarttags.xml app/design/adminhtml/default/default/layout/smarttags.xml
+Magneto_SmartTags.xml app/etc/modules/Mangeto_SmartTags.xml

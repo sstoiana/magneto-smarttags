@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<layout>
+	<adminhtml_catalog_product_tag>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="adminhtml/catalog_product_edit_tab_tag" name="admin.product.tags"/>
+            <block type="adminhtml/widget_grid_serializer" name="tag_grid_serializer">
+                <reference name="tag_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>admin.product.tags</grid_block_name>
+                        <data_callback>getSelectedTags</data_callback>
+                        <hidden_input_name>links[tags]</hidden_input_name>
+                        <reload_param_name>products_tags</reload_param_name>
+                    </action>
+                    <action method="addColumnInputName">
+                        <input_name>position</input_name>
+                    </action>
+                </reference>
+            </block>
+        </block>
+    </adminhtml_catalog_product_tag>
+</layout>

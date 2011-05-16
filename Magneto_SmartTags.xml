@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magneto_SmartTags>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Magneto_SmartTags>
+    </modules>
+</config> 
